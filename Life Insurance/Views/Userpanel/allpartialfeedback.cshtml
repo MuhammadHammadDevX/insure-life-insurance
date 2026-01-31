@@ -1,0 +1,52 @@
+﻿@model List<feedback>
+
+<!-- Testimonial Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto" style="max-width: 500px">
+            <h1 class="display-6 mb-5">What They Say About Our Insurance</h1>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <div class="testimonial-left h-100">
+                    <img class="img-fluid animated pulse infinite"
+                         src="~/assets/img/review1 (1).jpg"
+                         alt="" />
+                    <img class="img-fluid animated pulse infinite"
+                         src="~/assets/img/review1 (5).jpg"
+                         alt="" />
+                    <img class="img-fluid animated pulse infinite"
+                         src="~/assets/img/review1 (2).jpg"
+                         alt="" />
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="owl-carousel testimonial-carousel">
+                    @foreach (var feedback in Model)
+                    {
+                        <div class="testimonial-item text-center">
+                            <p class="fs-5">
+                                @feedback.feedback_message
+                            </p>
+                            <h5>@feedback.feedback_name</h5>
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="col-lg-3 d-none d-lg-block">
+                <div class="testimonial-right h-100">
+                    <img class="img-fluid animated pulse infinite"
+                         src="~/assets/img/review1 (3).jpg"
+                         alt="" />
+                    <img class="img-fluid animated pulse infinite"
+                         src="~/assets/img/review1 (6).jpg"
+                         alt="" />
+                    <img class="img-fluid animated pulse infinite"
+                         src="~/assets/img/review1 (4).jpg"
+                         alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->

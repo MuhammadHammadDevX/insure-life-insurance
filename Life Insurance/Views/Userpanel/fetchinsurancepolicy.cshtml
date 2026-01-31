@@ -1,0 +1,34 @@
+﻿@model List<InsurancePolicy>
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto" style="max-width: 500px">
+                <h1 class="display-6 mb-5">
+                    We Provide professional Insurance Plans
+                </h1>
+            </div>
+        
+            <div class="row g-4 justify-content-center">
+            @foreach (var insurancepolicy in Model)
+            {
+                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded h-100 p-5">
+                        <div class="d-flex align-items-center ms-n5 mb-4">
+                            <div class="service-icon flex-shrink-0 bg-primary rounded-end me-4">
+                                <img class="img-fluid"
+                                     src="@("~/insurancepolicy_images/"+insurancepolicy.insurancepolicy_image)" asp-append-version="true" alt="Insurance Policy image" />
+                            </div>
+                            <h4 class="mb-0">@insurancepolicy.insurancepolicy_name</h4>
+                        </div>
+                        <p class="mb-4">
+                            @insurancepolicy.insurancepolicy_description
+                        </p>
+                        <a class="btn btn-light px-3" href="@Url.Action("insurancepolicydetails","Userpanel",new{id=insurancepolicy.insurancepolicy_id})">Read More</a>
+                    </div>
+                </div>
+            }
+            </div>
+        
+        </div>
+        
+    </div>

@@ -1,0 +1,9 @@
+﻿@model List<TermPlanYearly>
+
+<select name="termplanyearly_id" class="form-control">
+    <option hidden>Select Term Plan</option>
+    @foreach (var termplanyearlydropdown in Model)
+    {
+        <option value="@termplanyearlydropdown.termplanyearly_id">@termplanyearlydropdown.termplanyearly_name</option>
+    }
+</select>

@@ -1,0 +1,9 @@
+﻿@model List<PolicyType>
+
+<select name="policytype_id" class="form-control">
+    <option hidden>Select Policy Type</option>
+    @foreach (var policytypedropdown in Model)
+    {
+        <option value="@policytypedropdown.policytype_id">@policytypedropdown.policytype_name</option>
+    }
+</select>

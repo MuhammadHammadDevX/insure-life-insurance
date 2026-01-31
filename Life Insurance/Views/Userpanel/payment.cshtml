@@ -1,0 +1,154 @@
+﻿@{
+    ViewData["Title"] = "Payment";
+    Layout = "~/Views/Shared/userpanel.cshtml";
+}
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-5 mb-2 wow fadeIn"
+     data-wow-delay="0.1s">
+    <div class="container py-5">
+        <h1 class="display-4 animated slideInDown mb-4">Secure Payment</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="@Url.Action("Index","Userpanel")">Home</a></li>
+                <li class="breadcrumb-item"><a>Insurance Services</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Secure Payment</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- Display success message -->
+@{
+    var successMessage = TempData["PaymentPaySuccess"] as string;
+    if (!string.IsNullOrEmpty(successMessage))
+    {
+        <script>
+            alert('@successMessage'); // Displays the success message with transaction ID
+        </script>
+    }
+}
+
+<!-- Payment Form Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <img width="100%" src="~/assets/img/payment2.png" alt="">
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <h1 class="display-6 mb-5">
+                    Secure Payment Form
+                </h1>
+                <form method="post">
+                    <div class="row g-3">
+                        <!-- Full Name -->
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text"
+                                       class="form-control"
+                                       id="FullName" name="FullName" required />
+                                <label for="FullName">Full Name</label>
+                            </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="email"
+                                       class="form-control"
+                                       id="Email" name="Email" required />
+                                <label for="Email">Email</label>
+                            </div>
+                        </div>
+                        <!-- Address -->
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control"
+                                          id="Address" name="Address" required
+                                          style="height: 50px"></textarea>
+                                <label for="Address">Address</label>
+                            </div>
+                        </div>
+                        <!-- City -->
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <input type="text"
+                                       class="form-control"
+                                       id="City" name="City" required />
+                                <label for="City">City</label>
+                            </div>
+                        </div>
+                        <!-- Country -->
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <input type="text"
+                                       class="form-control"
+                                       id="Country" name="Country" required />
+                                <label for="Country">Country</label>
+                            </div>
+                        </div>
+                        <!-- Postal Code -->
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <input type="text"
+                                       class="form-control"
+                                       id="ZipCode" name="ZipCode" required pattern="\d{5}" />
+                                <label for="ZipCode">Postal Code</label>
+                            </div>
+                        </div>
+                        <!-- Name on Card -->
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text"
+                                       class="form-control"
+                                       id="NameOnCard" name="NameOnCard" required />
+                                <label for="NameOnCard">Card Holder Name</label>
+                            </div>
+                        </div>
+                        <!-- Card Number -->
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text"
+                                       class="form-control"
+                                       id="CardNumber" name="CardNumber" required pattern="\d{16}" />
+                                <label for="CardNumber">Card Number (16 digits)</label>
+                            </div>
+                        </div>
+                        <!-- Expiry Date -->
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <input type="text"
+                                       class="form-control"
+                                       id="ExpiryDate" name="ExpiryDate" required pattern="(0[1-9]|1[0-2])\/\d{2}" />
+                                <label for="ExpiryDate">MM/YY</label>
+                            </div>
+                        </div>
+                        <!-- CVV -->
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <input type="text"
+                                       class="form-control"
+                                       id="CVV" name="CVV" required pattern="\d{3}" />
+                                <label for="CVV">CVV</label>
+                            </div>
+                        </div>
+                        <!-- Amount -->
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <input type="number"
+                                       class="form-control"
+                                       id="Amount" name="Amount" required />
+                                <label for="Amount">Amount</label>
+                            </div>
+                        </div>
+                        <!-- Submit Button -->
+                        <div class="col-12">
+                            <input type="submit" class="btn btn-primary w-100 py-3 px-5" value="Pay Now">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Payment Form End -->

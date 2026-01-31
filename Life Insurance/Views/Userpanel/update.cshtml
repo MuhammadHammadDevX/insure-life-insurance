@@ -1,0 +1,101 @@
+﻿
+@{
+    ViewData["Title"] = "update";
+    Layout = "~/Views/Shared/userpanel.cshtml";
+}
+
+@model User
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-5 mb-5 wow fadeIn"
+     data-wow-delay="0.1s">
+    <div class="container py-5">
+        <h1 class="display-4 animated slideInDown mb-4">Update Details</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="@Url.Action("Index","Userpanel")">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Profile</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    Update
+                </li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+
+<div class="container">
+    <div class="row g-5">
+        <div class="col-lg-12 wow fadeIn" data-wow-delay="0.1s">
+                <h2 class="title-step mb-5 text-center" style="font-size: 36px; font-weight: 600; color: #333; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 30px;">USER UPDATE</h2>
+            <form method="post" enctype="multipart/form-data">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="hidden" class="form-control" name="user_id" value="@Model.user_id">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" name="user_firstname" value="@Model.user_firstname" />
+                            <label for="subject">First Name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" name="user_lastname" value="@Model.user_lastname" />
+                            <label for="subject">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" name="user_email" value="@Model.user_email" />
+                            <label for="subject">Email Address</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" name="user_password" value="@Model.user_password" />
+                            <label for="subject">Password</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" name="user_cnic" value="@Model.user_cnic" />
+                            <label for="subject">CNIC Number</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" name="user_dateofbirth" value="@Model.user_dateofbirth" />
+                            <label for="subject">Date Of Birth</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" name="user_phone" value="@Model.user_phone" />
+                            <label for="subject">Mobile Number</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" name="user_address" value="@Model.user_address" />
+                            <label for="subject">Address</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="file" class="form-control" id="subject" placeholder="Subject" name="user_image" />
+                            <label for="subject">Image</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <img src="@("~/user_images/"+Model.user_image)" asp-append-version="true" class="profile-image" style="width: 75px; height: 75px; border-radius: 50%; object-fit: cover; border: 2px solid #ddd;" />
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="submit" class="btn btn-primary py-3 px-5" value="Save Changes">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

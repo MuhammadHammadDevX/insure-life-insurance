@@ -1,0 +1,110 @@
+﻿@{
+    ViewData["Title"] = "Claim";
+    Layout = "~/Views/Shared/userpanel.cshtml";
+}
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-5 mb-2 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <h1 class="display-4 animated slideInDown mb-4">Claim</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="@Url.Action("Index", "Userpanel")">Home</a></li>
+                <li class="breadcrumb-item"><a>Insurance Services</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Claim</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+@{
+    var successMessage = TempData["ClaimRequestSuccess"] as string;
+    if (!string.IsNullOrEmpty(successMessage))
+    {
+        <script>
+            alert('@successMessage');
+        </script>
+    }
+}
+
+<div class="container w-100 mt-5 d-flex align-items-center justify-content-center">
+    <div class="row">
+        <div class="col-lg-6 d-flex align-items-center justify-content-center flex-column">
+            <div class="padded-content">
+                <h6>Filing a Claim</h6>
+                <p style="font-size: 13px">Our claim settlement procedure is prompt and hassle-free. It is advisable to consult our Customer Services team for detailed assistance while filing your policy claim.</p>
+                <p style="font-size: 13px">Here is a simple step-by-step procedure to be followed when you make a claim.</p>
+
+                <h6 class="title-step">Step 1: Written Intimation</h6>
+                <p style="font-size: 13px">A claim can be lodged for benefits under the Policy by submitting written intimation from the Policy Owner/Claimant under his/her signature. Always remember to mention the event date, cause of the event, and current address of the claimant while submitting written intimation.</p>
+
+                <h6 class="title-step">Step 2: Complete the Claim Form along with relevant documents</h6>
+                <p style="font-size: 13px">Upon intimation of an occurrence (within 30 days), Jubilee Life will furnish relevant forms for filing proof of loss which are required based on the nature of events. Different forms are to be filled for claims against riders, death, hospital cash benefit, group term insurance, and gratuity.</p>
+
+                <h6 class="title-step">Step 3: Submit required documents along with the Claim Form</h6>
+                <p style="font-size: 13px">The original documents &amp; forms (hardcopy), properly completed, signed, and witnessed, must be returned to Jubilee Life within 90 days after the loss for which the claim is made.</p>
+
+                <h6 class="title-step">Step 4: Settlement</h6>
+                <p style="font-size: 13px">A claim is settled as soon as requirements to the satisfaction of Jubilee Life are completed.</p>
+
+                <h6>NOTE:</h6>
+                <ul class="mb60">
+                    <li style="font-size: 13px">Kindly ensure that all documents and forms are signed by you as per the signature affixed by you on your Policy’s original Proposal Form.</li>
+                    <li style="font-size: 13px">It is advisable to consult our Customer Services team for detailed assistance while filing your policy claim.</li>
+                </ul>
+
+                <h6>IF YOU WISH TO MAKE A CLAIM, OUR CUSTOMER SERVICES TEAM IS ALWAYS READY TO ASSIST YOU!</h6>
+                <p style="font-size: 13px">In the event of a covered incidence occurring such as critical illness, hospitalization, disability, or death, the claim must be intimated to Jubilee Life Insurance within thirty days of such occurrence by writing to us at:</p>
+            </div>
+        </div>
+        <div class="col-lg-6 d-flex align-items-center justify-content-center">
+            <form method="post" enctype="multipart/form-data" class="form-div">
+                <div class="row g-3 justify-content-center">
+                    <div class="col-10">
+                        <h5>Please fill the form below</h5>
+                    </div>
+                    <div class="col-10">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="name" name="claim_username" pattern="[A-Za-z\s]{3,50}" title="Only alphabets and spaces, 3 to 50 characters" required />
+                            <label for="name">Full Name</label>
+                        </div>
+                    </div>
+                    <div class="col-10">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="phone" name="claim_userphone" pattern="\+92\d{3}\d{7}" title="Phone number format: +923001234567" required />
+                            <label for="phone">Your Contact Number (Format : +923001234567 )</label>
+                        </div>
+                    </div>
+                    <div class="col-10">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="policy" name="claim_userpolicynumber" pattern="[A-Za-z0-9]{6,20}" title="Policy ID must be alphanumeric and 6-20 characters" required />
+                            <label for="policy">Policy ID</label>
+                        </div>
+                    </div>
+                    <div class="col-10">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="email" name="claim_useremail" required />
+                            <label for="email">Your Email</label>
+                        </div>
+                    </div>
+                    <div class="col-10">
+                        <div class="form-floating">
+                            <textarea class="form-control" id="description" name="claim_description" required style="height: 100px"></textarea>
+                            <label for="description">Description</label>
+                        </div>
+                    </div>
+                    <div class="col-10">
+                        <div class="form-floating">
+                            <input type="file" class="form-control" id="file" name="claim_image" accept=".pdf,.png,.jpeg,.jpg" required />
+                            <label for="file" style="font-size: 12px">Drop files here</label>
+                            <small style="font-size: 12px">Supported file formats: PDF, PNG, JPEG, JPG</small>
+                        </div>
+                    </div>
+                    <div class="col-10 text-center">
+                        <input type="submit" class="btn btn-primary w-100 py-3 px-5" value="SUBMIT">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

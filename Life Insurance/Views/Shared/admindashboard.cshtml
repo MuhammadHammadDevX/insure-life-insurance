@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Insure - Admin Dashboard</title>
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="~/css/app.min.css">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/components.css">
+    <!-- Custom style CSS -->
+    <link rel="stylesheet" href="~/css/custom.css">
+    <link rel='shortcut icon' type='image/x-icon' href="~/assets/img/mainlogo.jpg" />
+</head>
+<body>
+    <div class="loader"></div>
+    <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+    <div class="navbar-bg"></div>
+    <nav class="navbar navbar-expand-lg main-navbar sticky">
+        <div class="form-inline mr-auto">
+            <ul class="navbar-nav mr-3">
+                <li>
+                    <a href="#" data-toggle="sidebar" class="nav-link nav-link-lg
+									collapse-btn"> <i data-feather="align-justify"></i></a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link nav-link-lg fullscreen-btn">
+                        <i data-feather="maximize"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <ul class="navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown"
+                   class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                            <img alt="image" src="~/img/user.png"
+                         class="user-img-radious-style"> <span class="d-sm-none d-lg-inline-block"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right pullDown">
+                    <a href="@Url.Action("profile","Admin")" class="dropdown-item has-icon">
+                        <i class="far
+										fa-user"></i> Profile
+                    </a>
+                    <div class="dropdown-divider"></div>
+                            <a href="@Url.Action("logout","Admin")" class="dropdown-item has-icon text-danger">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+            <div class="sidebar-brand">
+                <a href="@Url.Action("Index","Admin")">
+                    <img alt="image" src="~/assets/img/mainlogo.jpg" class="header-logo" /> <span class="logo-name">Insure</span>
+                </a>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="menu-header">Home</li>
+                <li class="dropdown">
+                    <a href="@Url.Action("Index","Admin")" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
+                </li>
+                <li class="menu-header">Admin</li>
+                <li class="dropdown">
+                    <a href="@Url.Action("profile","Admin")" class="nav-link"><i data-feather="briefcase"></i><span>Profile</span></a>
+                </li>
+                <li class="menu-header">User</li>
+                <li class="dropdown">
+                    <a href="@Url.Action("fetchuser","Admin")" class="nav-link"><i data-feather="user-check"></i><span>Users</span></a>
+                </li>
+                <li class="menu-header">Main</li>
+                <li class="dropdown">
+                    <a href="@Url.Action("fetchinsurancepolicy","Admin")" class="nav-link"><i data-feather="command"></i><span>Insurance Policy</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="@Url.Action("fetchuserpolicy","Admin")" class="nav-link"><i data-feather="layout"></i><span>User Policy</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="@Url.Action("fetchpremium","Admin")" class="nav-link"><i data-feather="file"></i><span>Premium Calculation</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="@Url.Action("fetchemi","Admin")" class="nav-link"><i data-feather="bell"></i><span>EMI Calculation</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="@Url.Action("fetchpayment","Admin")" class="nav-link"><i data-feather="sliders"></i><span>Payments</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="@Url.Action("fetchclaim","Admin")" class="nav-link"><i data-feather="copy"></i><span>Claim</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="@Url.Action("fetchloan","Admin")" class="nav-link"><i data-feather="shopping-bag"></i><span>Loan</span></a>
+                </li>
+                <li class="menu-header">Pages</li>
+                <li class="dropdown">
+                    <a href="@Url.Action("fetchfeedback","Admin")" class="nav-link"><i data-feather="grid"></i><span>Feedbacks & Reviews</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="@Url.Action("fetchfaqs","Admin")" class="nav-link"><i data-feather="alert-triangle"></i><span>FAQs</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="@Url.Action("fetchnews","Admin")" class="nav-link"><i data-feather="pie-chart"></i><span>News & Updates</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="@Url.Action("fetchcontact","Admin")" class="nav-link"><i data-feather="mail"></i><span>Appointments & Contacts</span></a>
+                </li>
+                <li class="menu-header">Tables Dropdown</li>
+                <li class="dropdown">
+                    <a href="#" class="menu-toggle nav-link has-dropdown">
+                        <i data-feather="chevrons-down"></i><span>
+                            Other
+                            Pages
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="nav-link" href="@Url.Action("fetchpolicy","Admin")">Policy Types</a></li>
+                        <li><a class="nav-link" href="@Url.Action("fetchtransaction","Admin")">Transaction Types</a></li>
+                        <li><a class="nav-link" href="@Url.Action("fetchtermplanyearlymonthly","Admin")">Term Plans (Yearly , Monthly)</a></li>
+                        <li><a class="nav-link" href="@Url.Action("fetchtermplanyearly","Admin")">Term Plans Yearly</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+    </div>
+    <!-- Main Content -->
+    <div class="main-content">
+        <div>
+             @RenderBody()
+        </div>
+    </div>
+    
+    <footer class="main-footer">
+        <div class="footer-left">
+            <a href="@Url.Action("Index","Admin")">INSURE LIFE INSURANCE</a></a>
+        </div>
+        <div class="footer-right">
+        </div>
+    </footer>
+    </div>
+    </div>
+    <!-- General JS Scripts -->
+    <script src="~/js/app.min.js"></script>
+    <!-- JS Libraies -->
+    <script src="~/bundles/apexcharts/apexcharts.min.js"></script>
+    <!-- Page Specific JS File -->
+    <script src="~/js/page/index.js"></script>
+    <!-- Template JS File -->
+    <script src="~/js/scripts.js"></script>
+    <!-- Custom JS File -->
+    <script src="~/js/custom.js"></script>
+</body>
+
+</html>

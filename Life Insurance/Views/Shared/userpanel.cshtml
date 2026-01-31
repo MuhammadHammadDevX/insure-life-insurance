@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Insure - Life Insurance</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link rel='shortcut icon' type='image/x-icon' href="~/assets/img/mainlogo.jpg" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap"
+          rel="stylesheet" />
+
+    <!-- Bootsrap Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+          rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+          rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="~/assets/lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="~/assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="~/assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="~/assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark text-white-50 py-2 px-0 d-none d-lg-block">
+        <div class="row gx-0 align-items-center">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-phone-alt me-2"></small>
+                    <small>02134580415-25</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="far fa-envelope-open me-2"></small>
+                    <small>eProjects@aglsm.com</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="far fa-clock me-2"></small>
+                    <small>Mon - Sat : 09 AM - 09 PM</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="text-white-50 ms-4" href="https://www.facebook.com/AptechMetro/">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-white-50 ms-4" href="https://www.youtube.com/c/aptechmetrostargatecenter">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a class="text-white-50 ms-4" href="https://pk.linkedin.com/company/aptechmetro">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-white-50 ms-4" href="https://www.instagram.com/aptechmetro/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+        <a href="@Url.Action("Index","Userpanel")" class="navbar-brand d-flex align-items-center">
+            <h1 class="m-0">
+                <img class="img-fluid me-3"
+                     src="~/assets/img/icon/icon-02-primary.png"
+                     alt="" />Insure
+            </h1>
+        </a>
+        <button type="button"
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
+                <a href="@Url.Action("Index","Userpanel")" class="nav-item nav-link">Home</a>
+                <div class="nav-item dropdown">
+                    <a href="#"
+                       class="nav-link dropdown-toggle"
+                       data-bs-toggle="dropdown">Who We Are</a>
+                    <div class="dropdown-menu bg-light border-0 m-0">
+                        <a href="@Url.Action("aboutus","Userpanel")" class="dropdown-item">About Us</a>
+                        <a href="@Url.Action("bookappoinment","Userpanel")" class="dropdown-item">Book Appointment</a>
+                        <a href="@Url.Action("meetourexperts","Userpanel")" class="dropdown-item">Meet Our Experts</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#"
+                       class="nav-link dropdown-toggle"
+                       data-bs-toggle="dropdown">Customer Support</a>
+                    <div class="dropdown-menu bg-light border-0 m-0">
+                        <a href="@Url.Action("feedback","Userpanel")" class="dropdown-item">Customer Reviews</a>
+                        <a href="@Url.Action("allnews","Userpanel")" class="dropdown-item">Insurance Updates</a>
+                        <a href="@Url.Action("allfaqs","Userpanel")" class="dropdown-item">Help & Support</a>
+                    </div>
+                </div>
+                <!-- Insurance Services Dropdown -->
+                <div class="nav-item dropdown">
+                    <a href="#"
+                       class="nav-link dropdown-toggle"
+                       data-bs-toggle="dropdown">Insurance Services</a>
+                    <div class="dropdown-menu bg-light border-0 m-0">
+                        <!-- Check if user is logged in -->
+                        @if (Context.Session.GetString("usersession") != null)
+                        {
+                            <a href="@Url.Action("allinsurancepolicy", "Userpanel")" class="dropdown-item">Available Plans</a>
+                            <a href="@Url.Action("userpolicy", "Userpanel")" class="dropdown-item">Purchase Insurance Plan</a>
+                            <a href="@Url.Action("pre_form", "Userpanel")" class="dropdown-item">Premium Calculator</a>
+                            <a href="@Url.Action("emi_form", "Userpanel")" class="dropdown-item">EMI Calculator</a>
+                            <a href="@Url.Action("payment", "Userpanel")" class="dropdown-item">Secure Payment</a>
+                            <a href="@Url.Action("loan", "Userpanel")" class="dropdown-item">Loan</a>
+                            <a href="@Url.Action("claim", "Userpanel")" class="dropdown-item">Claim</a>
+                        }
+                        else
+                        {
+                            <!-- Links for non-logged in users redirect to login -->
+                            <a href="@Url.Action("userlogin", "Userpanel")" class="dropdown-item">Available Plans</a>
+                            <a href="@Url.Action("userlogin", "Userpanel")" class="dropdown-item">Purchase Insurance Plan</a>
+                            <a href="@Url.Action("userlogin", "Userpanel")" class="dropdown-item">Premium Calculator</a>
+                            <a href="@Url.Action("userlogin", "Userpanel")" class="dropdown-item">EMI Calculator</a>
+                            <a href="@Url.Action("userlogin", "Userpanel")" class="dropdown-item">Secure Payment</a>
+                            <a href="@Url.Action("userlogin", "Userpanel")" class="dropdown-item">Loan</a>
+                            <a href="@Url.Action("userlogin", "Userpanel")" class="dropdown-item">Claim</a>
+                        }
+                    </div>
+                </div>
+                <a href="@Url.Action("contact","Userpanel")" class="nav-item nav-link">Contact Us</a>
+            </div>
+        </div>
+        @if (Context.Session.GetString("usersession") != null)
+        {
+            <div class="dropdown">
+                <button class="btn btn-primary px-3 dropdown-toggle d-none d-lg-block" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-user me-2"></i>Account
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="@Url.Action("settinguser", "Userpanel")">Dashboard</a></li>
+                    <li><a class="dropdown-item" href="@Url.Action("logout", "Userpanel")">Logout</a></li>
+                </ul>
+            </div>
+        }
+        else
+        {
+            <a href="@Url.Action("userlogin", "Userpanel")" class="btn btn-primary px-3 d-none d-lg-block">Login</a>
+        }
+    </nav>
+    <!-- Navbar End -->
+    <main class="main">
+        <div>
+            @RenderBody()
+        </div>
+    </main>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h1 class="text-white mb-4">
+                        <img class="img-fluid me-3"
+                             src="~/assets/img/icon/icon-02-light.png"
+                             alt="" />Insure
+                    </h1>
+                    <p>
+                        Insure Insurance Corporation, founded in 1997, is Pakistan's largest life and health insurer.
+                    </p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square me-1" href="https://www.instagram.com/aptechmetro/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="btn btn-square me-1" href="https://www.facebook.com/AptechMetro/">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="btn btn-square me-1" href="https://www.youtube.com/c/aptechmetrostargatecenter">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a class="btn btn-square me-0" href="https://pk.linkedin.com/company/aptechmetro">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p>
+                        <i class="fa fa-map-marker-alt me-3"></i>Shah Faisal Colony Flyover, Faisal Cantonment, Karachi, Karachi City, Sindh
+                    </p>
+                    <p><i class="fa fa-phone-alt me-3"></i>02134580415-25</p>
+                    <p><i class="fa fa-envelope me-3"></i>eProjects@aglsm.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="@Url.Action("aboutus","Userpanel")">About Us</a>
+                    <a class="btn btn-link" href="@Url.Action("allinsurancepolicy","Userpanel")">Available Plans</a>
+                    <a class="btn btn-link" href="@Url.Action("bookappoinment","Userpanel")">Book Appoinment</a>
+                    <a class="btn btn-link" href="@Url.Action("allfaqs","Userpanel")">Help & Support</a>
+                    <a class="btn btn-link" href="@Url.Action("feedback","Userpanel")">Testimonials</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="@Url.Action("userpolicy","Userpanel")">Purchase Insurance Plan</a>
+                    <a class="btn btn-link" href="@Url.Action("pre_form","Userpanel")">Premium Calculator</a>
+                    <a class="btn btn-link" href="@Url.Action("emi_form","Userpanel")">EMI Calculator</a>
+                    <a class="btn btn-link" href="@Url.Action("claim","Userpanel")">Claim</a>
+                    <a class="btn btn-link" href="@Url.Action("loan","Userpanel")">Loan</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="@Url.Action("Index","Userpanel")">Insure Life Insurance</a> Corporation Of Pakistan. All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        Designed and Developed By <a href="@Url.Action("Index","Userpanel")">Aptech Student</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript Libraries -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="~/assets/lib/wow/wow.min.js"></script>
+    <script src="~/assets/lib/easing/easing.min.js"></script>
+    <script src="~/assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="~/assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="~/assets/lib/counterup/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="~/assets/js/main.js"></script>
+
+    <script>
+        // Show the modal automatically on page load
+        document.addEventListener("DOMContentLoaded", function () {
+            var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+            myModal.show();
+        });
+
+        const items = document.querySelectorAll('.accordion button');
+
+        function toggleAccordion() {
+            const itemToggle = this.getAttribute('aria-expanded');
+
+            for (i = 0; i < items.length; i++) {
+                items[i].setAttribute('aria-expanded', 'false');
+            }
+
+            if (itemToggle == 'false') {
+                this.setAttribute('aria-expanded', 'true');
+            }
+        }
+
+        items.forEach((item) => item.addEventListener('click', toggleAccordion));
+    </script>
+</body>
+</html>  

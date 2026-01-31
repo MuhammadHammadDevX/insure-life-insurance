@@ -1,0 +1,92 @@
+﻿@model EMI
+
+@{
+    ViewData["Title"] = "emi_form";
+    Layout = "~/Views/Shared/userpanel.cshtml";
+
+    // Generate months from 1 to 12 for tenure dropdown
+    var tenureOptions = Enumerable.Range(1, 12).ToList();
+}
+
+<div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <h1 class="display-4 animated slideInDown mb-4">EMI Calculator</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="@Url.Action("Index", "Userpanel")">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Financial Services</a></li>
+                <li class="breadcrumb-item active" aria-current="page">EMI Calculator</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row g-5">
+        <div class="col-lg-12 wow fadeIn" data-wow-delay="0.1s">
+            <div class="col-lg-6">
+                <h3 class="mb-5">Calculate EMI</h3>
+            </div>
+            <form method="post">
+                <div class="row g-3">
+
+                    <!-- Principal Amount -->
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="principal" name="principal" placeholder="Principal Amount" required min="1" step="0.01" value="@Model?.principal" />
+                            <label for="principal">Loan Amount</label>
+                        </div>
+                    </div>
+
+                    <!-- Fixed Interest Rate (11%) -->
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="rate_of_interest" name="rate_of_interest" value="11" readonly />
+                            <label for="rate_of_interest">Annual Interest Rate (%)</label>
+                        </div>
+                    </div>
+
+                    <!-- Tenure Dropdown (1 to 12 months) -->
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <label hidden for="tenure">Tenure</label>
+                            <select id="tenure" class="form-control custom-drop bg-transparent" name="tenure" required>
+                                <option hidden>Select Tenure (Months)</option>
+                                @foreach (var month in tenureOptions)
+                                {
+                                    if (Model?.tenure == month)
+                                    {
+                                        <option value="@month" selected>@month Month</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@month">@month Month</option>
+                                    }
+                                }
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="col-md-12">
+                        <input type="submit" class="btn btn-primary py-3 px-5" value="Calculate EMI">
+                    </div>
+                </div>
+            </form>
+
+            <!-- Display calculated EMI -->
+            @if (ViewBag.CalculatedEMI != null)
+            {
+                <div class="alert alert-info mt-3">
+                    <h4>EMI Details</h4>
+                    <p><strong>Loan Amount:</strong> @Model?.principal</p>
+                    <p><strong>Annual Interest Rate:</strong> 11%</p>
+                    <p><strong>Tenure:</strong> @Model?.tenure Month(s)</p>
+                    <hr />
+                    <h4>Calculated EMI</h4>
+                    <p><strong>EMI:</strong> @ViewBag.CalculatedEMI</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>

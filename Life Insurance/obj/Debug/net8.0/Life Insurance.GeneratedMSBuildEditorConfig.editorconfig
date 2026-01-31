@@ -1,0 +1,327 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Life_Insurance
+build_property.RootNamespace = Life_Insurance
+build_property.ProjectDir = C:\Users\muham\source\repos\Life Insurance\Life Insurance\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\muham\source\repos\Life Insurance\Life Insurance
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/claimdetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cY2xhaW1kZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/dropdownpolicytype.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZHJvcGRvd25wb2xpY3l0eXBlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/dropdowntermplanyearly.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZHJvcGRvd250ZXJtcGxhbnllYXJseS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/faqs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZmFxcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/faqsupdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZmFxc3VwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/fetchclaim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZmV0Y2hjbGFpbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/fetchcontact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZmV0Y2hjb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/fetchemi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZmV0Y2hlbWkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/fetchfaqs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZmV0Y2hmYXFzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/fetchfeedback.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZmV0Y2hmZWVkYmFjay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/fetchinsurancepolicy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZmV0Y2hpbnN1cmFuY2Vwb2xpY3kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/fetchloan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZmV0Y2hsb2FuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/fetchnews.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZmV0Y2huZXdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/fetchpayment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZmV0Y2hwYXltZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/fetchpolicy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZmV0Y2hwb2xpY3kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/fetchpremium.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZmV0Y2hwcmVtaXVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/fetchtermplanyearly.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZmV0Y2h0ZXJtcGxhbnllYXJseS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/fetchtermplanyearlymonthly.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZmV0Y2h0ZXJtcGxhbnllYXJseW1vbnRobHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/fetchtransaction.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZmV0Y2h0cmFuc2FjdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/fetchuser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZmV0Y2h1c2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/fetchuserpolicy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZmV0Y2h1c2VycG9saWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/insurancepolicy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5caW5zdXJhbmNlcG9saWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/insurancepolicydetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5caW5zdXJhbmNlcG9saWN5ZGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/insurancepolicyupdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5caW5zdXJhbmNlcG9saWN5dXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/loandetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cbG9hbmRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cbG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/news.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cbmV3cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/newsupdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cbmV3c3VwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/paymentdetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5ccGF5bWVudGRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/policytype.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5ccG9saWN5dHlwZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/policytypeupdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5ccG9saWN5dHlwZXVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5ccHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/termplanyearly.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdGVybXBsYW55ZWFybHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/termplanyearlymonthly.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdGVybXBsYW55ZWFybHltb250aGx5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/termplanyearlymonthlyupdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdGVybXBsYW55ZWFybHltb250aGx5dXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/termplanyearlyupdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdGVybXBsYW55ZWFybHl1cGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/transactiontype.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdHJhbnNhY3Rpb250eXBlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/transactiontypeupdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdHJhbnNhY3Rpb250eXBldXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/userdetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdXNlcmRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/userpolicydetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdXNlcnBvbGljeWRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Admin/userupdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdXNlcnVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Shared/admindashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXGFkbWluZGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Shared/userpanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXHVzZXJwYW5lbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Userpanel/aboutus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnBhbmVsXGFib3V0dXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Userpanel/allfaqs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnBhbmVsXGFsbGZhcXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Userpanel/allinsurancepolicy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnBhbmVsXGFsbGluc3VyYW5jZXBvbGljeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Userpanel/allnews.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnBhbmVsXGFsbG5ld3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Userpanel/allpartialfaqs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnBhbmVsXGFsbHBhcnRpYWxmYXFzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Userpanel/allpartialfeedback.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnBhbmVsXGFsbHBhcnRpYWxmZWVkYmFjay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Userpanel/bookappoinment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnBhbmVsXGJvb2thcHBvaW5tZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Userpanel/claim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnBhbmVsXGNsYWltLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Userpanel/contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnBhbmVsXGNvbnRhY3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Userpanel/emi_form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnBhbmVsXGVtaV9mb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Userpanel/feedback.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnBhbmVsXGZlZWRiYWNrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Userpanel/fetchinsurancepolicy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnBhbmVsXGZldGNoaW5zdXJhbmNlcG9saWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Userpanel/forgetpassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnBhbmVsXGZvcmdldHBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Userpanel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnBhbmVsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Userpanel/insurancepolicydetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnBhbmVsXGluc3VyYW5jZXBvbGljeWRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Userpanel/loan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnBhbmVsXGxvYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Userpanel/meetourexperts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnBhbmVsXG1lZXRvdXJleHBlcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Userpanel/payment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnBhbmVsXHBheW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Userpanel/pre_form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnBhbmVsXHByZV9mb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Userpanel/settinguser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnBhbmVsXHNldHRpbmd1c2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Userpanel/update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnBhbmVsXHVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Userpanel/userlogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnBhbmVsXHVzZXJsb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Userpanel/userpolicy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnBhbmVsXHVzZXJwb2xpY3kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Userpanel/userregister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnBhbmVsXHVzZXJyZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muham/source/repos/Life Insurance/Life Insurance/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-em1kfxyynq

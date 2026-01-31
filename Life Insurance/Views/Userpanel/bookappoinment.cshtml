@@ -1,0 +1,115 @@
+﻿
+@{
+    ViewData["Title"] = "aboutus";
+    Layout = "~/Views/Shared/userpanel.cshtml";
+}
+
+@{
+    var successMessage = TempData["AppointmentSubmitSuccess"] as string;
+    if (!string.IsNullOrEmpty(successMessage))
+    {
+        <script>
+            alert('@successMessage'); // You can display it as an alert
+        </script>
+    }
+}
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-5 mb-5 wow fadeIn"
+     data-wow-delay="0.1s">
+    <div class="container py-5">
+        <h1 class="display-4 animated slideInDown mb-4">Book Appoinment</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="@Url.Action("Index","Userpanel")">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Who We Are</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    Book Appoinment
+                </li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<!-- Appointment Start -->
+<div class="container-fluid appointment my-5 py-5 wow fadeIn"
+     data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+                <h1 class="display-6 text-white mb-4">
+                    State Life Insurance Corporation of Pakistan
+                </h1>
+                <h5 class="text-white mb-4">
+                    Explore Your Career with Us
+                </h5>
+                <p class="text-white mb-4">
+                    Whether you're looking to start a new career or join a larger team, we invite you to schedule an appointment with us to explore the endless possibilities at State Life Insurance. Let’s discuss how we can help you build a successful career.
+                </p>
+                <div class="bg-white rounded p-3">
+                    <div class="d-flex align-items-center bg-primary rounded p-3">
+                        <img class="flex-shrink-0 rounded-circle me-3"
+                             src="~/assets/img/iqbalyousufsheikh.jpg" width="30px" height="30px" />
+                        <p class="text-white mb-0">Call Us: 02134580415-25</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="bg-white rounded p-5">
+                    <form method="post">
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="text"
+                                           class="form-control"
+                                           id="gname"
+                                           name="contact_name" required />
+                                    <label for="gname">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="email"
+                                           class="form-control"
+                                           id="gmail"
+                                           name="contact_email" required />
+                                    <label for="gmail">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="text"
+                                           class="form-control"
+                                           id="cname"
+                                           name="contact_phone" required />
+                                    <label for="cname">Your Mobile</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="text"
+                                           class="form-control"
+                                           id="cage"
+                                           name="contact_city" required />
+                                    <label for="cage">Your City</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control"
+                                              id="message" name="contact_message" required
+                                              style="height: 80px"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <input type="submit" class="btn btn-primary py-3 px-4" value="Get Appointment">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Appointment End -->

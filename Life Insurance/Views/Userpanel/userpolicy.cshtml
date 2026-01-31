@@ -1,0 +1,182 @@
+﻿@{
+    ViewData["Title"] = "User Policy";
+    Layout = "~/Views/Shared/userpanel.cshtml";
+}
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <h1 class="display-4 animated slideInDown mb-4">Purchase Plan</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="@Url.Action("Index","Userpanel")">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Insurance Services</a></li>
+                <li class="breadcrumb-item"><a href="@Url.Action("AllInsurancePolicy","Userpanel")">Insurance Plans</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Purchase Insurance Plan</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+@{
+    var successMessage = TempData["UserpolicySubmitSuccess"] as string;
+    if (!string.IsNullOrEmpty(successMessage))
+    {
+        <script>
+            alert('@successMessage'); // Display success message with policy ID
+        </script>
+    }
+}
+
+<div class="container">
+    <div class="row g-5">
+        <div class="col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+        </div>
+        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+            <img width="100%" src="~/assets/img/mobile.png" alt="">
+        </div>
+        <div class="col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+        </div>
+        <div class="col-lg-12 wow fadeIn" data-wow-delay="0.1s">
+            <div class="col-lg-12">
+                <h5 class="mb-5 text-center">We’ve Got You Covered! Simply fill out the form below to purchase your insurance plan.</h5>
+            </div>
+            <form method="post">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="cnic" placeholder="CNIC Number" name="userpolicy_cnicnumber" pattern="\d{5}-\d{7}-\d{1}" required />
+                            <label for="cnic">CNIC Number (Format: 12345-1234567-1)</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-floating">
+                            <input type="date" class="form-control" id="cnicIssueDate" name="userpolicy_cnicissuancedate" required />
+                            <label for="cnicIssueDate">CNIC Issuance Date</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="name" name="userpolicy_name" required />
+                            <label for="name">Name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-floating">
+                            <input type="date" class="form-control" id="dob" name="userpolicy_dateofbirth" required />
+                            <label for="dob">Date of Birth</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="fatherName" name="userpolicy_fatherhusbandname" required />
+                            <label for="fatherName">Father / Husband Name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-floating">
+                            <select id="gender" class="form-control custom-drop bg-transparent" name="userpolicy_gender" required>
+                                <option hidden>Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="mobile" name="userpolicy_mobilenumber" pattern="\+92\d{3}\d{7}" required />
+                            <label for="mobile">Mobile Number (Format : +923001234567 )</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="city" name="userpolicy_city" required />
+                            <label for="city">City</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="email" name="userpolicy_emailaddress" required />
+                            <label for="email">Email Address</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-floating">
+                            <select id="incomeSource" class="form-control custom-drop bg-transparent" name="userpolicy_sourceofincome" required>
+                                <option hidden>Select Source of Income</option>
+                                <option value="Salary">Salary</option>
+                                <option value="Business Income">Business Income</option>
+                                <option value="Profit Income">Profit Income</option>
+                                <option value="Dividend Income">Dividend Income</option>
+                                <option value="Investment Income">Investment Income</option>
+                                <option value="Retirement Income">Retirement Income</option>
+                                <option value="Rental Income">Rental Income</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="orgName" name="userpolicy_organizationname" required />
+                            <label for="orgName">Organization Name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-floating">
+                            <select id="orgSector" class="form-control custom-drop bg-transparent" name="userpolicy_organizationsector" required>
+                                <option hidden>Select Organization Sector</option>
+                                <option value="GOVERNMENT">GOVERNMENT</option>
+                                <option value="PRIVATE">PRIVATE</option>
+                                <option value="PENSIONER">PENSIONER</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="income" name="userpolicy_monthlynetincome" pattern="\d+" required />
+                            <label for="income">Monthly Net Income</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-floating">
+                            <select id="policy" class="form-control custom-drop bg-transparent" name="userpolicy_insurancepolicyname" required>
+                                <option hidden>Select Policy</option>
+                                <option value="Cancer Protection Plan">Cancer Protection Plan</option>
+                                <option value="Insure Health Shield">Insure Health Shield</option>
+                                <option value="Alpha Insurance">Alpha Insurance</option>
+                                <option value="SafeNest Home Insurance">SafeNest Home Insurance</option>
+                                <option value="Empower of Life">Empower of Life</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-floating">
+                            <select id="termPlan" class="form-control custom-drop bg-transparent" name="userpolicy_termplan" required>
+                                <option hidden>Select Term Period Plan</option>
+                                <option value="12 MONTHS (1 YEARS)">12 MONTHS (1 YEAR)</option>
+                                <option value="24 MONTHS (2 YEARS)">24 MONTHS (2 YEARS)</option>
+                                <option value="36 MONTHS (3 YEARS)">36 MONTHS (3 YEARS)</option>
+                                <option value="48 MONTHS (4 YEARS)">48 MONTHS (4 YEARS)</option>
+                                <option value="60 MONTHS (5 YEARS)">60 MONTHS (5 YEARS)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-floating">
+                            <input type="date" class="form-control" id="startDate" name="userpolicy_startdate" required />
+                            <label for="startDate">Date of Beginning</label>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-floating">
+                            <textarea class="form-control" id="address" name="userpolicy_residentialaddress" required style="height: 50px"></textarea>
+                            <label for="address">Residential Address</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="submit" class="btn btn-primary py-3 px-5" value="Submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

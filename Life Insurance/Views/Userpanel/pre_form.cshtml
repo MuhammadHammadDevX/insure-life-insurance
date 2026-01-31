@@ -1,0 +1,189 @@
+﻿@model Preminuim
+
+@{
+    ViewData["Title"] = "Premium Calculator";
+    Layout = "~/Views/Shared/userpanel.cshtml";
+}
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <h1 class="display-4 animated slideInDown mb-4">Premium Calculator</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="@Url.Action("Index", "Userpanel")">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Insurance Services</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    Premium Calculator
+                </li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+
+<div class="container">
+    <div class="row g-5">
+        <div class="col-lg-12 wow fadeIn" data-wow-delay="0.1s">
+            <div class="col-lg-6">
+                <h3 class="mb-5">Calculate Premium</h3>
+            </div>
+            <form method="post">
+                <div class="row g-3">
+
+                    <!-- Policy Type -->
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <select id="policy" class="form-control custom-drop bg-transparent" name="prolicy_type" required>
+                                <option hidden>Select Policy</option>
+                                @if (Model?.prolicy_type == "Big Deal Plan")
+                                {
+                                    <option value="Cancer Protection Plan" selected>Cancer Protection Plan</option>
+                                }
+                                else
+                                {
+                                    <option value="Cancer Protection Plan">Cancer Protection Plan</option>
+                                }
+                                @if (Model?.prolicy_type == "Family Pension Plan")
+                                {
+                                    <option value="Insure Health Shield" selected>Insure Health Shield</option>
+                                }
+                                else
+                                {
+                                    <option value="Insure Health Shield">Insure Health Shield</option>
+                                }
+                                @if (Model?.prolicy_type == "Family Pension Plan")
+                                {
+                                    <option value="Alpha Insurance" selected>Alpha Insurance</option>
+                                }
+                                else
+                                {
+                                    <option value="Alpha Insurance">Alpha Insurance</option>
+                                }
+                                @if (Model?.prolicy_type == "Family Pension Plan")
+                                {
+                                    <option value="SafeNest Home Insurance" selected>SafeNest Home Insurance</option>
+                                }
+                                else
+                                {
+                                    <option value="SafeNest Home Insurance">SafeNest Home Insurance</option>
+                                }
+                                @if (Model?.prolicy_type == "Family Pension Plan")
+                                {
+                                    <option value="Empower of Life" selected>Empower of Life</option>
+                                }
+                                else
+                                {
+                                    <option value="Empower of Life">Empower of Life</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Gender -->
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <select id="gender" class="form-control custom-drop bg-transparent" name="gender" required>
+                                <option hidden>Select Gender</option>
+                                @if (Model?.gender == "Male")
+                                {
+                                    <option value="Male" selected>Male</option>
+                                }
+                                else
+                                {
+                                    <option value="Male">Male</option>
+                                }
+                                @if (Model?.gender == "Female")
+                                {
+                                    <option value="Female" selected>Female</option>
+                                }
+                                else
+                                {
+                                    <option value="Female">Female</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Age (User Input) -->
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="age" name="age" min="18" placeholder="Age" value="@Model?.age" required />
+                            <label for="age">Age (18+)</label>
+                        </div>
+                    </div>
+
+                    <!-- Sum Assured -->
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="sum_assured" name="sum_assured" placeholder="Sum Assured" value="@Model?.sum_assured" required />
+                            <label for="sum_assured">Sum Assured</label>
+                        </div>
+                    </div>
+
+                    <!-- Premium Payment Mode -->
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <select id="paymentMode" class="form-control custom-drop bg-transparent" name="premium_pay_mode" required>
+                                <option hidden>Select Payment Mode</option>
+                                @if (Model?.premium_pay_mode == "Annually")
+                                {
+                                    <option value="Annually" selected>Annually</option>
+                                }
+                                else
+                                {
+                                    <option value="Annually">Annually</option>
+                                }
+                                @if (Model?.premium_pay_mode == "Half Yearly")
+                                {
+                                    <option value="Half Yearly" selected>Half Yearly</option>
+                                }
+                                else
+                                {
+                                    <option value="Half Yearly">Half Yearly</option>
+                                }
+                                @if (Model?.premium_pay_mode == "Quarterly")
+                                {
+                                    <option value="Quarterly" selected>Quarterly</option>
+                                }
+                                else
+                                {
+                                    <option value="Quarterly">Quarterly</option>
+                                }
+                                @if (Model?.premium_pay_mode == "Monthly")
+                                {
+                                    <option value="Monthly" selected>Monthly</option>
+                                }
+                                else
+                                {
+                                    <option value="Monthly">Monthly</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="col-md-12">
+                        <input type="submit" class="btn btn-primary py-3 px-5" value="Submit">
+                    </div>
+                </div>
+            </form>
+
+            <!-- Display the submitted details and calculated premium -->
+            @if (ViewBag.CalculatedPremium != null)
+            {
+                <div class="alert alert-info mt-3">
+                    <h4>Premium Details</h4>
+                    <p><strong>Policy:</strong> @Model.prolicy_type</p>
+                    <p><strong>Gender:</strong> @Model.gender</p>
+                    <p><strong>Age:</strong> @Model.age</p>
+                    <p><strong>Sum Assured:</strong> @Model.sum_assured</p>
+                    <p><strong>Premium Payment Mode:</strong> @Model.premium_pay_mode</p>
+                    <hr />
+                    <h4>Calculated Premium</h4>
+                    <p><strong>Premium:</strong> @ViewBag.CalculatedPremium</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
